@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // box-sizingの初期値はcontent-box
+    // box-sizing: content-box;
+}
+
+body {
+    color: #333;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: serif;
+    line-height: 1.1;
+    font: 28px;
+}
+
+h3 {
+    font-size: 13px;
+    letter-spacing: -0.3px;
+    line-height: 1.7;
+}
+
+p {
+    font-family: serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.7;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        list-style: none;
+    }
+}
+
+
+// .sitebackgroundcolor {
+//     background-color: #eee;
+
+//     // & .sitewidth {}
+// }
+
+.header {
+    padding-top: 4%;
+    margin: 0 auto;
+    width: 90%;
+
+    .hero_img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .header_txt {
+        // height: 4%;
+        // background-color: lightgray;
+
+        .header_sbs {
+            display: flex;
+            padding-top: 30px;
+
+            .header_menu {
+                padding-left: 50px;
+                padding-top: 1px;
+
+                .menu_li01,
+                .menu_li02 {
+                    padding-right: 31px;
+                }
+            }
+
+
+        }
+    }
+}
+
+.contents {
+    width: 957px;
+    margin: 0 auto 0;
+
+    .concept,
+    .work {
+        display: flex;
+        // align-items: center;
+        margin-top: 65px;
+    }
+
+    .concept_img,
+    .work_img {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .concept_txt,
+    .work_txt {
+        width: 50%;
+        // height: 180px;
+        padding: 150px 68px;
+
+        .title_sub {
+            font-size: 14px;
+            margin-top: 8px;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0;
+        }
+    }
+
+    // .work {
+    //     margin-top: 60px;
+    // }
+}
+
+.footer {
+    width: 57.3%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 117px;
+
+    p {
+        padding-top: 78px;
+    }
+}
